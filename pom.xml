@@ -26,6 +26,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distibutionManagement>
+      <repository>
+        <id>nexus</id>
+        <name>Release Repos</name>
+        <url>http://34.125.255.110:8081/repository/spring-release/</url>
+     </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>Snapshot Repos</name>
+        <url>http://34.125.255.110:8081/repository/spring-snapshot/</url>
+    </snapshotRepository>  
+  </distibutionManagement>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
