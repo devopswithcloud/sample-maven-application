@@ -6,7 +6,7 @@
 
   <groupId>com.learnwithsiva.app</groupId>
   <artifactId>my-maven-app</artifactId>
-  <version>2.2-SNAPSHOT</version>
+  <version>2.3-SNAPSHOT</version>
 
   <name>my-maven-app</name>
   <!-- FIXME change it to the project's website -->
