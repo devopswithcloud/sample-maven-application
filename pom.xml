@@ -12,7 +12,7 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>http:///
+  <properties>
     <sonar.host.url>http://34.125.255.110:9000/</sonar.host.url>
     <sonar.login>8765e1fb1118c34977cb188281e5f3ff4b913abc</sonar.login>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
