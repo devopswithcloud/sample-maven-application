@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Example Deploy') {
             when {
-                buildingTag()
+                //buildingTag()
+                tag "release-*"
             }
             steps {
                 echo 'Deploying'
