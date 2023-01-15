@@ -7,10 +7,10 @@ pipeline {
         buildDiscarder logRotator(numToKeepStr: '5')
         timestamps()
     }
-    triggers {
+    /*triggers {
         pollSCM '* * * * *'
         cron '* * * * *'
-    }
+    }*/
     stages {
         stage('checkoutCode'){
             steps {
