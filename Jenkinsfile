@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example Deploy') {
             when {
-=               // changelog '.*some_text.*'
+              // changelog '.*some_text.*'
                 changelog 'lgtm'
             }
             steps {
