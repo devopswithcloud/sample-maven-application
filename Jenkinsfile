@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         DEPLOY_TO = 'production'
+        BRANCH_NAME = env.BRANCH_NAME
     }
     stages {
         stage('Example Build') {
@@ -12,7 +13,8 @@ pipeline {
         stage('Example Deploy') {
             when {
                 allOf {
-                    branch 'production'
+                    expression { BRANCH_NAME ==~ /(production|staging)/ }
+                    //branch 'production'
                     environment name: 'DEPLOY_TO', value: 'production'
                 }
             }
