@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DEPLOY_TO = 'production'
-        BRANCH_NAME = env.BRANCH_NAME
+        // BRANCH_NAME = env.BRANCH_NAME
     }
     stages {
         stage('Example Build') {
