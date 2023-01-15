@@ -1,3 +1,4 @@
+pipeline {
     agent any
     environment {
         DEPLOY_TO = 'production'
