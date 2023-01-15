@@ -3,11 +3,10 @@ pipeline {
     stages {
         stage('Example Deploy') {
             when {
-              // changelog '.*some_text.*'
-                changelog 'lgtm'
+                changeRequest()
             }
             steps {
-                echo 'Deploying with new word'
+                echo 'Deploying through PR'
             }
         }
     }
