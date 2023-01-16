@@ -10,7 +10,7 @@ pipeline {
         }
         stage('version') {
             steps {
-                build(version)
+                build("version")
             }
         }
     }
