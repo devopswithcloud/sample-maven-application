@@ -1,6 +1,9 @@
 @Library("pipeline-shared-lib") _
 pipeline {
     agent any
+    tools {
+        maven 'Existing_MVN'
+    }
     stages {
         stage('checkoutCode'){
             steps {
