@@ -1,12 +1,16 @@
+@Library("pipeline-shared-lib") _
 pipeline {
     agent any
     stages {
-        stage('Example Deploy') {
-            when {
-                changeRequest()
-            }
+        stage('checkoutCode'){
             steps {
-                echo 'Deploying through PR'
+                // Checkout code from github repo
+                git credentialsId: 'devopswithcloud_git_creds', url: 'https://github.com/devopswithcloud/sample-maven-application.git'
+            }
+        }
+        stage('version') {
+            steps {
+                build(version)
             }
         }
     }
